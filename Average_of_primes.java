@@ -1,7 +1,8 @@
 import java.util.Scanner;
 class prime
 {
-	public static boolean isprime(int n) {
+	public static boolean isprime(int n) 
+	{
 		if(n<=1)
 		{
 			return false;
