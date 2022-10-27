@@ -1,20 +1,24 @@
 import java.util.Scanner;
 class Y
 {
-    public static void main(String args[])
+    public static int isperfect(int num)
     {
-        Scanner s=new Scanner(System.in);
-        int n=s.nextInt();
-        int i=1,sum=0;
-        while(i<=n/2)
+        int sum=0;
+        for(int i=1;i<=num/2;i++)
         {
-            if(n%i==0)
+            if(num%i==0)
             {
                 sum=sum+i;
             }
-            i++;
         }
-        if(sum==n)
+        return sum;
+    }
+    public static void main(String args[])
+    {
+        Scanner  s=new  Scanner(System.in);
+        int n=s.nextInt();
+        int res=isperfect(n);
+        if(res==n)
         {
             System.out.println("True");
         }
@@ -23,4 +27,5 @@ class Y
             System.out.println("False");
         }
     }
+    
 }
