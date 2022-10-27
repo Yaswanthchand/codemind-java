@@ -1,21 +1,26 @@
 import java.util.Scanner;
-class P
+class Y
 {
     public static void main(String args[])
     {
         Scanner s=new Scanner(System.in);
-        int n,su=0;
-        n=s.nextInt();
-        for(int i=1;i<n;i++)
+        int n=s.nextInt();
+        int i=1,sum=0;
+        while(i<=n/2)
         {
             if(n%i==0)
             {
-                su=su+i;
+                sum=sum+i;
             }
+            i++;
         }
-        if(su==n)
-          System.out.print("True");
+        if(sum==n)
+        {
+            System.out.println("True");
+        }
         else
-          System.out.print("False");
+        {
+            System.out.println("False");
+        }
     }
 }
