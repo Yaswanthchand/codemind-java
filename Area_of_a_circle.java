@@ -1,14 +1,10 @@
 import java.util.Scanner;
-class area
+class Y
 {
     public static void main(String args[])
     {
-        int r;
-        float area;
         Scanner s=new Scanner(System.in);
-        r=s.nextInt();
-        area=(float)(3.14*r*r);
-        System.out.format("%.2f",area);
-        
+        int r=s.nextInt();
+        System.out.format("%.2f",(float)3.14*r*r);
     }
 }
